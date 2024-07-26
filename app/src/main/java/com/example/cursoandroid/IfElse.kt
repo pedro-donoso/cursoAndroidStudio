@@ -2,7 +2,7 @@ package com.example.cursoandroid
 
 fun main() {
 //    ifBasico()
-    ifAnidado()
+      ifInt()
 }
 
 fun ifBasico() {
@@ -15,16 +15,12 @@ fun ifBasico() {
     }
 }
 
-fun ifAnidado() {
-    val animal = "Loro"
+fun ifInt() {
+    val age = 30
 
-    if (animal == "Perro") {
-        println("Es un Perro")
-    } else if (animal == "Gato") {
-        println("Es un Gato")
-    } else if (animal == "Loro") {
-        println("Es un Loro")
+    if (age > 18) {
+        println("Es mayor de edad")
     } else {
-        println("No es un animal")
+        println("Es menor de edad")
     }
 }
