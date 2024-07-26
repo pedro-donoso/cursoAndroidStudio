@@ -1,43 +1,35 @@
 package com.example.cursoandroid
 
-//VALORES
-/**
- *Valores Numéricos
- */
+const val saludo = "Hola"
+const val nombre = "Pedro"
+const val edad = 30
+
+fun hello(){
+    val hello = "Hola"
+    println(hello)
+}
+
+fun name() {
+    val name = "Pedro"
+    println(name)
+}
+
+fun age() {
+    val age= 30
+    println(age)
+}
+
+
+fun concatenacion() {
+    val concatenacion = "$saludo me llamo $nombre y tengo $edad años"
+    println(concatenacion)
+}
+
 fun main(){
-
-    //Int
-    val age: Int = 36
-
-    //Long
-    val example:Long = 1000000
-
-    //Float
-    val floatExample: Float = 3.14f
-
-    //Double
-    val doubleExample: Double = 3.141592653589793
-
-    /**
-     *Valores Alfanuméricos
-     */
-
-//Char
-    val charExample1: Char = 'p'
-    val charExample2: Char = '2'
-    val charExample3: Char = '@'
-
-    //String
-    val stringExample: String = "Hello World"
-
-    /**
-     *Valores Booleanos
-     */
-
-    val booleanExample4: Boolean = true
-    val booleanExample5: Boolean = false
-
-   println(doubleExample)
+    hello()
+    name()
+    age()
+    concatenacion()
 }
 
 
