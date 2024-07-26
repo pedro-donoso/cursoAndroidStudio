@@ -2,7 +2,8 @@ package com.example.cursoandroid
 
 fun main() {
 //    ifBasico()
-      ifInt()
+//      ifMultiple()
+    ifMultipleOr()
 }
 
 fun ifBasico() {
@@ -15,12 +16,21 @@ fun ifBasico() {
     }
 }
 
-fun ifInt() {
-    val age = 30
+fun ifMultiple() {
+    var age = 18
+    var parentPermission = true
+    var imHappy = true
 
-    if (age > 18) {
-        println("Es mayor de edad")
-    } else {
-        println("Es menor de edad")
+    if (age >= 18 && parentPermission && imHappy) {
+        println("Puede beber cerveza")
+    }
+}
+
+fun ifMultipleOr(){
+    var pet = "dog"
+    var imHappy = true
+
+    if (pet == "dog" || (pet == "cat" && imHappy)){
+        println("Es un gato o un perro")
     }
 }
