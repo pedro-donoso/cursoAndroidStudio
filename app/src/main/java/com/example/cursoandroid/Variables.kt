@@ -1,35 +1,9 @@
 package com.example.cursoandroid
 
-const val saludo = "Hola"
-const val nombre = "Pedro"
-const val edad = 30
-
-fun hello(){
-    val hello = "Hola"
-    println(hello)
+fun add(nombre: String, edad: Int) {
+    println("$nombre tiene $edad años")
 }
 
-fun name() {
-    val name = "Pedro"
-    println(name)
+fun main() {
+    add("Pedro", 30)
 }
-
-fun age() {
-    val age= 30
-    println(age)
-}
-
-
-fun concatenacion() {
-    val concatenacion = "$saludo me llamo $nombre y tengo $edad años"
-    println(concatenacion)
-}
-
-fun main(){
-    hello()
-    name()
-    age()
-    concatenacion()
-}
-
-
