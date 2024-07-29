@@ -8,24 +8,17 @@
     android:layout_height="match_parent"
     tools:context="com.cursoandroid.main.firstapp.FirstAppActivity">
 
-    <View
-        android:id="@+id/viewPurple"
-        android:layout_width="125dp"
-        android:background="@color/purple_200"
-        app:layout_constraintStart_toEndOf="@+id/viewBlue"
-        app:layout_constraintBottom_toTopOf="@+id/viewBlue"
-        android:layout_height="125dp"
-        />
-
-    <View
-        android:id="@+id/viewBlue"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:background="@color/teal_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:textColor="@color/teal_200"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:text="Hola Android"
+/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
