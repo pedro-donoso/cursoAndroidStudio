@@ -8,17 +8,16 @@
     android:layout_height="match_parent"
     tools:context="com.cursoandroid.main.firstapp.FirstAppActivity">
 
-<TextView
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btnStart"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textSize="30sp"
-    android:textColor="@color/teal_200"
-    android:textStyle="bold"
+    android:text="Pulsame"
+    android:background="@color/purple_200"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    android:text="Hola Android"
 />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
