@@ -1,4 +1,4 @@
-package com.example.cursoandroid.exercises
+package com.cursoandroid.main.exercises
 
 /*En el código inicial que se proporciona en el siguiente fragmento de código, escribe un programa
 que imprima el mensaje de resumen según la cantidad de notificaciones que recibiste.

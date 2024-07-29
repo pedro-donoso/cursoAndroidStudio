@@ -1,4 +1,4 @@
-package com.example.cursoandroid.exercises
+package com.cursoandroid.main.sintaxis
 
 fun main() {
     //Indice 0-6

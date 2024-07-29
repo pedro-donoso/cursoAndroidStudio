@@ -1,4 +1,4 @@
-package com.example.cursoandroid
+package com.cursoandroid.main.sintaxis
 
 fun main() {
     add("Pedro", 30)
