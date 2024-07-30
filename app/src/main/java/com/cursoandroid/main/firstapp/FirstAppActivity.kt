@@ -1,7 +1,7 @@
 package com.cursoandroid.main.firstapp
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cursoandroid.R
 
@@ -15,8 +15,20 @@ class FirstAppActivity : AppCompatActivity() {
         setContentView(R.layout.activity_first_app)
 
         val btnStart = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.btnStart)
+        val etName = findViewById<androidx.appcompat.widget.AppCompatEditText>(R.id.etName)
+
+        etName.text.toString()
+
         btnStart.setOnClickListener {
-            Log.i("pedro", "Has pulsado el boton")
+            val name = etName.text.toString()
+
+            if (name.isNotEmpty()) {
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra("EXTRA_NAME", name)
+                startActivity(intent)
+            }
+
+
         }
     }
 }
