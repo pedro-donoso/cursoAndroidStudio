@@ -7,9 +7,24 @@
     android:layout_height="match_parent"
     tools:context="com.cursoandroid.main.firstapp.FirstAppActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Escribe tu nombre"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etName"
         android:layout_width="300dp"
+        android:singleLine="true"
+        android:maxLines="1"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/btnStart"
