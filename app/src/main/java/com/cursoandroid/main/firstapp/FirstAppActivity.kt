@@ -1,5 +1,6 @@
 package com.cursoandroid.main.firstapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -23,7 +24,8 @@ class FirstAppActivity : AppCompatActivity() {
             val name = etName.text.toString()
 
             if (name.isNotEmpty()) {
-                Log.i("pedro", "Boton Pulsado ${name}")
+                val intent = Intent(this, ResultActivity::class.java)
+                startActivity(intent)
             }
 
 
