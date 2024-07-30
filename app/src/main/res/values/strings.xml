@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">cursoAndroid</string>
-    <string name="card_name1">Hombre</string>
-    <string name="card_name2">Mujer</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
 </resources>
