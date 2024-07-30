@@ -2,7 +2,6 @@ package com.cursoandroid.main.firstapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cursoandroid.R
 
@@ -25,6 +24,7 @@ class FirstAppActivity : AppCompatActivity() {
 
             if (name.isNotEmpty()) {
                 val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra("EXTRA_NAME", name)
                 startActivity(intent)
             }
 
