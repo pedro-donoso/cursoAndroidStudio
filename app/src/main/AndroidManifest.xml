@@ -13,7 +13,10 @@
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
         tools:targetApi="31">
         <activity
-            android:name="com.pedrodevs.cursoandroid.MenuActivity"
+            android:name="com.pedrodevs.androidmaster.imccalculator.ImcCalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.pedrodevs.androidmaster.MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,12 +25,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pedrodevs.cursoandroid.firstapp.ResultActivity"
+            android:name="com.pedrodevs.androidmaster.firstapp.ResultActivity"
             android:exported="false" />
         <activity
-            android:name="com.pedrodevs.cursoandroid.firstapp.FirstAppActivity"
+            android:name="com.pedrodevs.androidmaster.firstapp.FirstAppActivity"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
