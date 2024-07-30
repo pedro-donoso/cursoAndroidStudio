@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.cursoandroid.main.firstapp.ResultActivity">
+    tools:context="com.pedrodevs.cursoandroid.firstapp.ResultActivity">
 
     <TextView
         android:id="@+id/tvResult"

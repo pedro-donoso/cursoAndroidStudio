@@ -1,4 +1,4 @@
-package com.cursoandroid.main.firstapp
+package com.pedrodevs.cursoandroid.firstapp
 
 import android.content.Intent
 import android.os.Bundle
