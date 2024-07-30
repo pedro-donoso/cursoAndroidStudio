@@ -1,4 +1,4 @@
-package com.pedrodevs.cursoandroid.firstapp
+package com.pedrodevs.androidmaster.firstapp
 
 import android.os.Bundle
 import android.widget.TextView

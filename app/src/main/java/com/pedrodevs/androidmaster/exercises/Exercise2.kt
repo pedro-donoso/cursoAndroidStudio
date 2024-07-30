@@ -1,4 +1,4 @@
-package com.pedrodevs.cursoandroid.exercises
+package com.pedrodevs.androidmaster.exercises
 
 /*Las entradas de cine suelen tener un precio diferente según la edad de los espectadores.
 En el codigo inicial que se proporciona en el siguiente fragmento de codigo, escribe un programa que calcule los precios de estas entradas basados en la edad:
