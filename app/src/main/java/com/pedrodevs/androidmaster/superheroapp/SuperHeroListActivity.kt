@@ -1,9 +1,14 @@
 package com.pedrodevs.androidmaster.superheroapp
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import com.example.cursoandroid.databinding.ActivitySuperHeroListBinding
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -53,6 +58,16 @@ class SuperHeroListActivity : AppCompatActivity() {
 
     //        FUNCION DE BUSQUEDA FUERA
     private fun searchByName(query: String) {
+
+        CoroutineScope(Dispatchers.IO).launch {
+            val myResponse: Response<SuperHeroDataResponse> =
+                retrofit.create(ApiService::class.java).getSuperheroes(query)
+            if (myResponse.isSuccessful) {
+                Log.i("pedro", "Funciona :)")
+            } else {
+                Log.i("pedro", "No funciona :(")
+            }
+        }
     }
 
     //    INSTANCIO RETROFIT
