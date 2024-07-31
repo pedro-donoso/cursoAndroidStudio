@@ -10,15 +10,9 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnSaludApp"
+        android:id="@+id/btnSuperhero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SaludApp"/>
-
-    <Button
-        android:id="@+id/btnIMCApp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="IMC App"/>
+        android:text="@string/superhero_app"/>
 
 </LinearLayout>

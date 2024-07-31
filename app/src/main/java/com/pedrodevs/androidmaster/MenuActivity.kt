@@ -5,26 +5,21 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cursoandroid.R
-import com.pedrodevs.androidmaster.firstapp.FirstAppActivity
-import com.pedrodevs.androidmaster.imccalculator.ImcCalculatorActivity
+import com.pedrodevs.androidmaster.superheroapp.SuperHeroListActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
-        val btnSaludApp = findViewById<Button>(R.id.btnSaludApp)
-        val btnImcApp = findViewById<Button>(R.id.btnIMCApp)
-        btnSaludApp.setOnClickListener { navigateToSaludApp() }
-        btnImcApp.setOnClickListener { navigateToImcApp() }
+        val btnSuperhero = findViewById<Button>(R.id.btnSuperhero)
+//        BOTON
+        btnSuperhero.setOnClickListener { navigateToSuperheroApp() }
     }
 
-    private fun navigateToImcApp() {
-        val intent = Intent(this, ImcCalculatorActivity::class.java)
+//        NAVEGACION
+    private fun navigateToSuperheroApp() {
+        val intent = Intent(this, SuperHeroListActivity::class.java)
         startActivity(intent)
     }
 
-    private fun navigateToSaludApp(){
-        val intent = Intent(this, FirstAppActivity::class.java)
-        startActivity(intent)
-    }
 }
