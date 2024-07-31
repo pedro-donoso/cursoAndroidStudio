@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
+import androidx.core.view.isVisible
 import com.example.cursoandroid.databinding.ActivitySuperHeroListBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -59,6 +60,8 @@ class SuperHeroListActivity : AppCompatActivity() {
     //        FUNCION DE BUSQUEDA FUERA
     private fun searchByName(query: String) {
 
+        binding.progressBar.isVisible = true
+
         CoroutineScope(Dispatchers.IO).launch {
             val myResponse: Response<SuperHeroDataResponse> =
                 retrofit.create(ApiService::class.java).getSuperheroes(query)
@@ -68,6 +71,11 @@ class SuperHeroListActivity : AppCompatActivity() {
                 val response: SuperHeroDataResponse? = myResponse.body()
                 if (response != null) {
                     Log.i("pedro", response.toString())
+
+                    runOnUiThread {
+                        binding.progressBar.isVisible = false
+                    }
+
                 }
 
             } else {
