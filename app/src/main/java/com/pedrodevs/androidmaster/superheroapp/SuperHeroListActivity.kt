@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cursoandroid.databinding.ActivitySuperHeroListBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -47,6 +48,13 @@ class SuperHeroListActivity : AppCompatActivity() {
             //            LISTENER SE DEBE MANTENER
             override fun onQueryTextChange(newText: String?) = false
         })
+
+        //CREO ADAPTER
+        adapter = SuperheroAdapter()
+        binding.rvSuperHero.setHasFixedSize(true)
+        binding.rvSuperHero.layoutManager = LinearLayoutManager(this)
+        binding.rvSuperHero.adapter = adapter
+
     }
 
     //        FUNCION DE BUSQUEDA FUERA
@@ -61,6 +69,7 @@ class SuperHeroListActivity : AppCompatActivity() {
                 if (response != null) {
                     Log.i("pedro", response.toString())
                     runOnUiThread {
+                        adapter.updateList(response.superheroes)
                         binding.progressBar.isVisible = false
                     }
                 }

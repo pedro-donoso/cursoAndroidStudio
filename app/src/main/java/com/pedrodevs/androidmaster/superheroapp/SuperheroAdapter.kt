@@ -9,6 +9,11 @@ import com.example.cursoandroid.R
 class SuperheroAdapter(var superheroList: List<SuperheroItemResponse> = emptyList()) :
     RecyclerView.Adapter<SuperheroViewHolder>() {
 
+        fun updateList(list: List<SuperheroItemResponse>) {
+            superheroList = list
+            notifyDataSetChanged()
+        }
+
     // UTILIZA ITEM
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuperheroViewHolder {
         return SuperheroViewHolder(
